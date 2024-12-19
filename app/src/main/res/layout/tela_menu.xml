@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="@color/light_grey"
+    tools:context=".activity.TelaMenu">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Que tipo de cadastro deseja gerenciar?"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        tools:ignore="HardcodedText" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <Button
+        android:id="@+id/buttonReceita"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="Receita"
+        android:background="@color/dark_blue"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:textAlignment="center"
+        tools:ignore="HardcodedText" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <Button
+        android:id="@+id/buttonIngrediente"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="Ingrediente"
+        android:background="@color/dark_blue"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:textAlignment="center"
+        tools:ignore="HardcodedText" />
+
+</LinearLayout>

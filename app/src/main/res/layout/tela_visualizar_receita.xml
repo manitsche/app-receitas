@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/light_grey"
+    tools:context=".activity.TelaVisualizarReceita">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <!-- Título da Receita -->
+        <TextView
+            android:id="@+id/textViewTitulo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:textSize="24sp"
+            android:paddingBottom="8dp" />
+
+        <!-- Espaçamento entre o título e a imagem -->
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="8dp" />
+
+        <!-- Imagem da Receita -->
+        <com.github.chrisbanes.photoview.PhotoView
+            android:id="@+id/photoview"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:src="@drawable/placeholder"
+            android:scaleType="centerCrop"
+            android:background="@color/white" />
+
+        <!-- Espaçamento entre a imagem e a descrição -->
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="16dp" />
+
+        <!-- Texto do Modo de Preparo -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:text="Modo de preparo:"
+            android:paddingBottom="8dp"
+            tools:ignore="HardcodedText" />
+
+        <TextView
+            android:id="@+id/textViewModoPreparo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            android:lineSpacingExtra="4dp"/>
+
+        <!-- Espaçamento entre o modo de preparo e o botão -->
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="16dp" />
+
+        <!-- Botão de Voltar -->
+        <Button
+            android:id="@+id/buttonVoltar"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:background="@color/dark_blue"
+            android:text="Voltar"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            tools:ignore="HardcodedText" />
+    </LinearLayout>
+</ScrollView>
